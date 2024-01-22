@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <title>Shop</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="nav__header">
+        <a href="../pages/index.html">ComicToons</a>
+      </h1>
+      <div class="search" id="search">
+        <input
+          type="text"
+          class="searchTerm"
+          id="searchInput"
+          placeholder="Search for name,category..."
+        />
+        <i class="fa fa-close close-btn" id="close-btn"></i>
+        <button type="submit" class="searchButton" id="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+        <div
+          class="search__results search__results__display"
+          id="searchResult"
+        ></div>
+      </div>
+      <ul>
+        <li class="nav__item">
+          <a href="../pages/shop.html"> Shop </a>
+        </li>
+        <li class="nav__item">Blog</li>
+        <li class="nav__item">
+          <a href="../pages/cart.html">Cart</a>
+        </li>
+        <li class="nav__item"><a href="../pages/profile.html">Profile</a></li>
+      </ul>
+    </nav>
+    <section class="produts__arrival" id="shop">
+      <h1><span>#</span>Shop the choice</h1>
+      <div class="btn-container">
+        <button class="btn btn__small" id="filter-name">filter by name</button>
+        <button class="btn btn__small" id="filter-price">
+          filter by price
+        </button>
+        <div class="btn btn__small">
+          <label for="categories">categories</label>
+          <select id="categories" class="categories">
+            <option value="select category" selected disabled hidden>
+              select category
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="showcase arrival" id="showcase"></div>
+    </section>
+    <ul class="pagination" id="pagination"></ul>
+    <script type="module" src="../scripts/products/searchProduct.js"></script>
+    <script type="module" src="../scripts/index.js"></script>
+    <script type="module" src="../scripts/products/shop.js"></script>
+  </body>
+</html>

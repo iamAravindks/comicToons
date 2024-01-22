@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 10px 0;
+  li {
+    color: #634f5f;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    &.page__active {
+      background-color: #ffba6a;
+      color: white;
+    }
+    &:hover:not(.page__active) {
+      background-color: #ddd;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.product__slider {
+  width: 98vw;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  gap: 7px;
+  scrollbar-width: none;
+  margin: 10px 0;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 300px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      width: 300px;
+      height: 300px;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0.7;
+      position: absolute;
+      z-index: 1000;
+      transition: 0.3s ease-in-out;
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+    > img {
+      width: 300px;
+      min-height: 300px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+}

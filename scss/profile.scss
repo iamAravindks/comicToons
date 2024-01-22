@@ -1,0 +1,33 @@
+@import "./partials/navbar";
+
+body {
+  background-color: #f2ecff;
+}
+
+.profile {
+  width: 100%;
+  span {
+    font-family: "Bungee Spice", sans-serif;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    padding: 2px;
+  }
+
+  .profile__details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    b {
+      color: #634f5f;
+      font-size: 1.6rem;
+      margin: 0 5px;
+    }
+  }
+}

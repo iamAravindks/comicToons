@@ -1,0 +1,15 @@
+@import "./partials/default";
+@import "./partials/button";
+
+.signup {
+  flex-direction: row-reverse;
+  .signup__caption {
+    background: url("https://c.wallhere.com/photos/6c/37/1600x1122_px_Gintama-581856.jpg!d");
+    &::before {
+      right: 0;
+    }
+  }
+  @media only screen and (max-width: 798px) {
+    flex-direction: column;
+  }
+}

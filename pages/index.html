@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comic Toons | Home</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav class="nav">
+      <h1 class="nav__header">
+        <a href="../pages/index.html">ComicToons</a>
+      </h1>
+      <div class="search" id="search">
+        <input
+          type="text"
+          class="searchTerm"
+          id="searchInput"
+          placeholder="Search for name,category..."
+        />
+        <i class="fa fa-close close-btn" id="close-btn"></i>
+        <button type="submit" class="searchButton" id="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+        <div
+          class="search__results search__results__display"
+          id="searchResult"
+        ></div>
+      </div>
+      <ul>
+        <li class="nav__item">
+          <a href="../pages/shop.html"> Shop </a>
+        </li>
+        <li class="nav__item">Blog</li>
+        <li class="nav__item">
+          <a href="../pages/cart.html">Cart</a>
+        </li>
+        <li class="nav__item"><a href="../pages/profile.html">Profile</a></li>
+      </ul>
+    </nav>
+
+  <!--  Hero-->
+  <main class="hero">
+    <div class="hero-img">
+      <img src="https://w0.peakpx.com/wallpaper/58/281/HD-wallpaper-comic-books-comics-superheroes-marvel-book.jpg" />
+    </div>
+    <div class="hero-caption">
+      <p>
+        "Unleash the POW-er of Savings! 💥 Dive into a world of laughter and adventure with our 2024 ComicToons Sale! 🚀
+        Grab your favorite heroes and hilarious tales at SUPER prices. Don't miss out, heroes assemble – it's comic
+        time!" <br /><span>🎉 #ComicToonsSale #ComicFrenzy</span>
+      </p>
+    </div>
+  </main>
+  <!--Weekly  -->
+  <section class="produts-showcase">
+    <h1><span>#</span>Weekly Fantastic Four</h1>
+    <div class="showcase" id="weekly">
+
+
+    </div>
+  </section>
+
+  <!--  New Arriavls-->
+
+  <section class="produts-arrival">
+    <h1><span>#</span>New Arrivals</h1>
+    <div class="showcase arrival" id="showcase">
+
+        <div class="product__heading">
+          <h2 class="product__name">
+            Ultimate X-men
+          </h2>
+          <h5 class="product__price">19</h5>
+          <div class="product__body">
+            <img class="product__img"
+              src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcREpZzRMtkL6oMFdedzNx7kOlmQe5GliTW7BYuGnK8FF_80tCkaZIYH70LYtBrm4dvGRGssqWA1b-nrN0MPPTo9eH__eTGm9yqr7_3MLYUs96e0mx6lKf99pQ&usqp=CAE"
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <script type="module" src="../scripts/products/searchProduct.js"></script>
+  <script type="module" src="../scripts/index.js"></script>
+</body>
+
+</html>

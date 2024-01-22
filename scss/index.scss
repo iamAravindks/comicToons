@@ -1,0 +1,172 @@
+@import "partials/_navbar";
+
+main.hero {
+  background-color: #ffba6a;
+  display: flex;
+  justify-content: center;
+  max-height: 500px;
+
+  div.hero-img {
+    width: 50%;
+    img {
+      --w: 100%;
+      width: var(--w);
+      height: var(--w);
+    }
+  }
+
+  div.hero-caption {
+    width: 50%;
+    min-height: 100%;
+    display: flex;
+    padding: 20px;
+
+    p {
+      font-family: "Comic Neue", cursive;
+      font-size: 1.5em;
+      font-weight: 700;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+
+    div.hero-img {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    div.hero-caption {
+      width: 100%;
+      text-wrap: wrap;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// weekly
+/*  weekly choice options*/
+.produts-showcase,
+.produts-arrival {
+  background-color: #e08976;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  span {
+    font-family: "Bungee Spice", sans-serif;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: right;
+    width: 100%;
+    height: 100px;
+    padding: 2px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 5px 0px;
+    }
+  }
+}
+.products-showcase {
+  max-height: 600px;
+}
+.produts-arrival {
+  background-color: #f9f871;
+  min-height: 600px;
+  h1 {
+    text-align: left;
+  }
+  @media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 5px 0px;
+    }
+  }
+}
+
+.showcase {
+  justify-content: flex-start;
+}
+.arrival {
+  justify-content: flex-end;
+}
+
+.showcase,
+.arrival {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: space-between;
+  margin-left: auto;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 600px) {
+    justify-content: center;
+  }
+}
+
+.product {
+  &__card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    max-height: 400px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__heading {
+    padding: 20px;
+    text-align: center;
+  }
+  &__name {
+    font-family: "Comic Neue", cursive;
+    font-size: 24px;
+    margin: 10px 0;
+    color: #333;
+  }
+  &__price {
+    font-size: 18px;
+    margin: 0;
+    color: #ff6600;
+    &::before {
+      content: "$";
+    }
+  }
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    overflow: hidden;
+  }
+  &__img {
+    width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    border-bottom: 2px solid #ff6600;
+  }
+}
+
+// product cards

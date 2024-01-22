@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="nav__header">
+        <a href="../pages/index.html">ComicToons</a>
+      </h1>
+      <div class="search" id="search">
+        <input
+          type="text"
+          class="searchTerm"
+          id="searchInput"
+          placeholder="Search for name,category..."
+        />
+        <i class="fa fa-close close-btn" id="close-btn"></i>
+        <button type="submit" class="searchButton" id="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+        <div
+          class="search__results search__results__display"
+          id="searchResult"
+        ></div>
+      </div>
+      <ul>
+        <li class="nav__item">
+          <a href="../pages/shop.html"> Shop </a>
+        </li>
+        <li class="nav__item">Blog</li>
+        <li class="nav__item">
+          <a href="../pages/cart.html">Cart</a>
+        </li>
+        <li class="nav__item"><a href="../pages/profile.html">Profile</a></li>
+      </ul>
+    </nav>
+
+    <section class="profile">
+      <h1><span>#</span>Profile</h1>
+      <div class="profile__details">
+        <h3 id="name">Name :<b>John Doe</b></h3>
+        <h3 id="email">Email :<b>doe@ex.com</b></h3>
+      </div>
+    </section>
+    <script type="module" src="../scripts/products/searchProduct.js"></script>
+    <script type="module" src="../scripts/Auth/profile.js"></script>
+  </body>
+</html>

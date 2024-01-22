@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/cart.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="nav__header">
+        <a
+          href="https://codepen.io/Aravind-K-Subash/full/jOJMZPY"
+          target="_balnk"
+          >ComicToons</a
+        >
+      </h1>
+      <div class="search" id="search">
+        <input
+          type="text"
+          class="searchTerm"
+          id="searchInput"
+          placeholder="What are you looking for?"
+        />
+        <i class="fa fa-close close-btn" id="close-btn"></i>
+        <button type="submit" class="searchButton" id="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+        <div
+          class="search__results search__results__display"
+          id="searchResult"
+        ></div>
+      </div>
+      <ul>
+        <li class="nav__item">Shop</li>
+        <li class="nav__item">Blog</li>
+        <li class="nav__item">
+          <a
+            href="https://codepen.io/Aravind-K-Subash/full/NWJRzYY"
+            target="_blank"
+            >Cart</a
+          >
+        </li>
+        <li class="nav__item">Profile</li>
+      </ul>
+    </nav>
+
+    <h1 class="cart__title" style="text-align: center"><span>#</span>cart</h1>
+    <section class="cart">
+      <table class="cart__table">
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price/Item</th>
+          <th>Total</th>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS2UBIxOQkMQZ8apSWLV1G0VMhXxEb9msyG_Bpd7uQvUJoIah5tTfk5vkDOjXozCG0LbO9PS5zaArzoUgP0IJzDaE53IVbhqEF_gNEjAYc&usqp=CAE"
+              alt="product image"
+            />
+            <h4>JJK Vol.20</h4>
+          </td>
+          <td class="quantity-container">
+            <button class="add-button">+</button>
+            2
+            <button class="remove-button">-</button>
+          </td>
+          <td>$30</td>
+          <td>$60</td>
+        </tr>
+        <tr>
+          <td>
+            <img
+              src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTrePu4fwBUtKYdVpr-A2yLl8uu1_To1D7WzUR9ag6_At-8FVJsfJv8oXpv4hZQVHNdTx7QDe2jVWO1sdYXO7gYgEMMwkUo5hlONF8LXk3N&usqp=CAE"
+              alt="product image"
+            />
+            <h4>Watchmen</h4>
+          </td>
+          <td class="quantity-container">
+            <button class="add-button">+</button>
+            1
+            <button class="remove-button">-</button>
+          </td>
+          <td>$19</td>
+          <td>$19</td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="total">
+              <h2>Total : $79</h2>
+              <button class="checkout-button">checkout</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <script type="module" src="../scripts/products/searchProduct.js"></script>
+    <script type="module" src="../scripts/products/cart.js"></script>
+  </body>
+</html>
